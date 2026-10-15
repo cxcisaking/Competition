@@ -1,0 +1,4 @@
+train: D:/Competition/Project/images/train
+val: D:/Competition/Project/images/val
+nc: 1
+names: ['insulator']

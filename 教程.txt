@@ -1,0 +1,14 @@
+conda activate D:\competition_env\electric_yolo 环境
+cd C:\Users\lenovo\Desktop\Competition\Project 文件夹
+labelme
+yolo detect train data=data.yaml model=yolov8n.pt epochs=100 imgsz=640 batch=16 patience=50
+epochs=100 —— 学习轮数
+imgsz=640 —— 图片尺寸
+batch=16 —— 批大小
+patience=50 —— 早停耐心值
+
+
+train: C:/Users/lenovo/Desktop/Competition/Project/images/train
+val: C:/Users/lenovo/Desktop/Competition/Project/images/val
+nc: 2
+names: ['insulator', 'broken_insulator']
